@@ -26,6 +26,291 @@
               "card-border": "#EAEAEA",
             },
             fontFamily: {
+              sans: [
+                "Inter",
+                "system-ui",
+                "-apple-system",
+                "BlinkMacSystemFont",
+                "Segoe UI",
+                "sans-serif",
+              ],
+              serif: ["Playfair Display", "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="bg-page text-text-main antialiased font-sans">
+    <div class="min-h-screen flex flex-col">
+      <!-- HEADER / HERO -->
+      <header class="py-24">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+          <p class="text-sm uppercase tracking-[0.2em] text-text-muted mb-4">
+            Lead Product Designer
+          </p>
+          <h1
+            class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight mb-4"
+          >
+            Product Designer &amp; System Architect
+          </h1>
+          <h2
+            class="font-serif text-xl sm:text-2xl text-text-muted font-normal mb-8"
+          >
+            Превращаю хаос в работающую систему.
+          </h2>
+          <p
+            class="text-base sm:text-lg text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
+          >
+            Специализируюсь на Design Ops, архитектуре интерфейсов и связке
+            «Дизайн — Разработка». Проектирую логику продукта, которая экономит
+            ресурсы бизнеса.
+          </p>
+
+          <div
+            class="flex flex-wrap items-center justify-center gap-4 sm:gap-6"
+            aria-label="Основные действия"
+          >
+            <a
+              href="#"
+              class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-accent text-white text-sm font-medium shadow-sm hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-page transition"
+            >
+              Скачать CV
+            </a>
+            <a
+              href="https://t.me/chehirskuy_kot"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-gray-100 text-text-main text-sm font-medium border border-gray-200 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 focus-visible:ring-offset-page transition"
+            >
+              <i class="ph ph-telegram-logo text-lg"></i>
+              <span>Telegram</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- ПОРТФОЛИО / КЕЙСЫ -->
+        <section class="py-16">
+          <div class="container mx-auto px-6 max-w-5xl">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+            >
+              <article
+                class="bg-gray-200 rounded-2xl aspect-[4/3] shadow-sm border border-card-border"
+                aria-label="Placeholder кейса 1"
+              ></article>
+              <article
+                class="bg-gray-200 rounded-2xl aspect-[4/3] shadow-sm border border-card-border"
+                aria-label="Placeholder кейса 2"
+              ></article>
+              <article
+                class="bg-gray-200 rounded-2xl aspect-[4/3] shadow-sm border border-card-border"
+                aria-label="Placeholder кейса 3"
+              ></article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ФИЛОСОФИЯ / DESIGN AS ENGINEERING -->
+        <section class="py-16">
+          <div class="container mx-auto px-6 max-w-5xl">
+            <h2
+              class="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-center mb-12 tracking-tight"
+            >
+              Design as engineering
+            </h2>
+
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch"
+            >
+              <!-- Карточка 1 -->
+              <article
+                class="bg-white rounded-2xl border border-card-border shadow-sm p-6 sm:p-7 flex flex-col h-full"
+              >
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-accent mb-4"
+                  aria-hidden="true"
+                >
+                  <i class="ph ph-brackets-angle text-xl"></i>
+                </div>
+                <h3 class="font-serif text-lg sm:text-xl font-normal mb-3">
+                  Система, а не макеты
+                </h3>
+                <p class="text-sm sm:text-base text-text-muted leading-relaxed">
+                  Я не передаю в разработку картинки. Я передаю логику,
+                  состояния, корнер-кейсы и готовые компоненты.
+                </p>
+              </article>
+
+              <!-- Карточка 2 -->
+              <article
+                class="bg-white rounded-2xl border border-card-border shadow-sm p-6 sm:p-7 flex flex-col h-full"
+              >
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-accent mb-4"
+                  aria-hidden="true"
+                >
+                  <i class="ph ph-chart-line-up text-xl"></i>
+                </div>
+                <h3 class="font-serif text-lg sm:text-xl font-normal mb-3">
+                  Язык бизнеса
+                </h3>
+                <p class="text-sm sm:text-base text-text-muted leading-relaxed">
+                  Дизайн должен решать задачи продукта (KPI, конверсия,
+                  удержание), а не личные амбиции дизайнера.
+                </p>
+              </article>
+
+              <!-- Карточка 3 -->
+              <article
+                class="bg-white rounded-2xl border border-card-border shadow-sm p-6 sm:p-7 flex flex-col h-full"
+              >
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-accent mb-4"
+                  aria-hidden="true"
+                >
+                  <i class="ph ph-terminal-window text-xl"></i>
+                </div>
+                <h3 class="font-serif text-lg sm:text-xl font-normal mb-3">
+                  Дружба с Dev
+                </h3>
+                <p class="text-sm sm:text-base text-text-muted leading-relaxed">
+                  Я понимаю, как верстается мой макет. Компоненты в Figma
+                  соответствуют компонентам в React/Vue. Это экономит часы
+                  работы.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ОБО МНЕ -->
+        <section class="py-16">
+          <div class="container mx-auto px-6 max-w-3xl text-center">
+            <div
+              class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-6"
+              aria-hidden="true"
+            ></div>
+            <h3
+              class="font-serif text-xl sm:text-2xl md:text-3xl font-normal mb-4"
+            >
+              Обо мне
+            </h3>
+            <p
+              class="text-sm sm:text-base md:text-lg text-text-muted leading-relaxed"
+            >
+              В дизайне более 10 лет. Прошел путь от полиграфии до сложных
+              продуктовых интерфейсов. Сейчас я фокусируюсь на процессах: как
+              сделать так, чтобы дизайн-команда работала эффективно, а
+              разработка получала качественные вводные. Я готов брать
+              ответственность не только за макеты, но и за архитектуру продукта
+              и построение процессов в команде.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="bg-footer-bg text-footer-text text-center py-24 mt-8">
+        <div class="container mx-auto px-6 max-w-4xl">
+          <h2
+            class="font-serif text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight mb-3"
+          >
+            Открыт к предложениям на позиции
+          </h2>
+          <h2
+            class="font-serif text-lg sm:text-xl md:text-2xl font-normal text-[#888888] mb-8"
+          >
+            Senior Product Designer / Design Lead
+          </h2>
+
+          <nav
+            class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-10 text-sm sm:text-base"
+            aria-label="Контакты"
+          >
+            <a
+              href="mailto:andreisudnichnikov@yandex.ru"
+              class="hover:text-white transition"
+            >
+              andreisudnichnikov@yandex.ru
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white transition"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://t.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white transition"
+            >
+              Telegram
+            </a>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center px-5 py-2 rounded-full bg-accent text-white text-sm font-medium shadow-sm hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg transition"
+            >
+              Скачать CV
+            </a>
+          </nav>
+
+          <p class="text-xs text-[#777777]">
+            ©
+            <span id="year"></span>
+            Системность, какая она есть.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Автоматический год в копирайте
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+    </script>
+  </body>
+</html>
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lead Product Designer — Портфолио</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind = {
+        theme: {
+          extend: {
+            colors: {
+              page: "#FAFAFA",
+              "text-main": "#333333",
+              "text-muted": "#666666",
+              accent: "#4A90E2",
+              "footer-bg": "#222222",
+              "footer-text": "#EEEEEE",
+              "card-border": "#EAEAEA",
+            },
+            fontFamily: {
               sans: ['Inter', "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
               serif: ['Playfair Display', "Georgia", "serif"],
             },
@@ -269,4 +554,277 @@
         new Date().getFullYear().toString();
     </script>
   </body>
+=======
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lead Product Designer — Портфолио</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind = {
+        theme: {
+          extend: {
+            colors: {
+              page: "#FAFAFA",
+              "text-main": "#333333",
+              "text-muted": "#666666",
+              accent: "#4A90E2",
+              "footer-bg": "#222222",
+              "footer-text": "#EEEEEE",
+              "card-border": "#EAEAEA",
+            },
+            fontFamily: {
+              sans: ['Inter', "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+              serif: ['Playfair Display', "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="bg-[#F8F8F8] text-[#333333] antialiased font-sans">
+    <div class="min-h-screen flex flex-col">
+      <!-- HEADER / HERO -->
+      <header class="py-24">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+        <h1
+            class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight mb-4"
+          >
+            Product Designer &amp; System Architect
+          </h1>
+          <h2
+            class="font-serif text-xl sm:text-2xl text-text-muted font-normal mb-8"
+          >
+            Превращаю хаос в работающую систему.
+          </h2>
+          <p
+            class="text-base sm:text-lg text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
+          >
+            Специализируюсь на Design Ops, архитектуре интерфейсов и связке
+            «Дизайн — Разработка». Проектирую логику продукта, которая экономит
+            ресурсы бизнеса.
+          </p>
+
+          <div
+            class="flex flex-wrap items-center justify-center gap-4 sm:gap-6"
+            aria-label="Основные действия"
+          >
+            <a
+              href="#"
+              class="bg-[#4285F4] text-white px-8 py-3 rounded-[12px] font-medium hover:bg-[#3367D6] transition-colors"
+            >
+              Скачать CV
+            </a>
+            <a
+              href="https://t.me/chehirskuy_kot"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-[12px] bg-gray-100 text-text-main text-sm font-medium border border-gray-200 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 focus-visible:ring-offset-page transition"
+            >
+              <i class="ph ph-telegram-logo text-lg"></i>
+              <span>Telegram</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- ПОРТФОЛИО / КЕЙСЫ -->
+        <section class="py-16">
+          <div class="container mx-auto px-6 max-w-5xl">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+            >
+              <article
+                class="bg-gray-200 rounded-2xl aspect-[4/3] shadow-sm border border-card-border"
+                aria-label="Placeholder кейса 1"
+              ></article>
+              <article
+                class="bg-gray-200 rounded-2xl aspect-[4/3] shadow-sm border border-card-border"
+                aria-label="Placeholder кейса 2"
+              ></article>
+              <article
+                class="bg-gray-200 rounded-2xl aspect-[4/3] shadow-sm border border-card-border"
+                aria-label="Placeholder кейса 3"
+              ></article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ФИЛОСОФИЯ / DESIGN AS ENGINEERING -->
+        <section class="py-16">
+          <div class="container mx-auto px-6 max-w-5xl">
+            <h2
+              class="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-center mb-12 tracking-tight"
+            >
+              Design as engineering
+            </h2>
+
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch"
+            >
+              <!-- Карточка 1 -->
+              <article
+                class="bg-white rounded-2xl border border-card-border shadow-sm p-6 sm:p-7 flex flex-col h-full"
+              >
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-accent mb-4"
+                  aria-hidden="true"
+                >
+                  <i class="ph ph-brackets-angle text-xl"></i>
+                </div>
+                <h3 class="font-serif text-lg sm:text-xl font-normal mb-3">
+                  Система, а не макеты
+                </h3>
+                <p class="text-sm sm:text-base text-text-muted leading-relaxed">
+                  Я не передаю в разработку картинки. Я передаю логику,
+                  состояния, корнер-кейсы и готовые компоненты.
+                </p>
+              </article>
+
+              <!-- Карточка 2 -->
+              <article
+                class="bg-white rounded-2xl border border-card-border shadow-sm p-6 sm:p-7 flex flex-col h-full"
+              >
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-accent mb-4"
+                  aria-hidden="true"
+                >
+                  <i class="ph ph-chart-line-up text-xl"></i>
+                </div>
+                <h3 class="font-serif text-lg sm:text-xl font-normal mb-3">
+                  Язык бизнеса
+                </h3>
+                <p class="text-sm sm:text-base text-text-muted leading-relaxed">
+                  Дизайн должен решать задачи продукта (KPI, конверсия,
+                  удержание), а не личные амбиции дизайнера.
+                </p>
+              </article>
+
+              <!-- Карточка 3 -->
+              <article
+                class="bg-white rounded-2xl border border-card-border shadow-sm p-6 sm:p-7 flex flex-col h-full"
+              >
+                <div
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-accent mb-4"
+                  aria-hidden="true"
+                >
+                  <i class="ph ph-terminal-window text-xl"></i>
+                </div>
+                <h3 class="font-serif text-lg sm:text-xl font-normal mb-3">
+                  Дружба с Dev
+                </h3>
+                <p class="text-sm sm:text-base text-text-muted leading-relaxed">
+                  Я понимаю, как верстается мой макет. Компоненты в Figma
+                  соответствуют компонентам в React/Vue. Это экономит часы
+                  работы.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ОБО МНЕ -->
+        <section class="py-16">
+          <div class="container mx-auto px-6 max-w-3xl text-center">
+            <div
+              class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-6"
+              aria-hidden="true"
+            ></div>
+            <h3
+              class="font-serif text-xl sm:text-2xl md:text-3xl font-normal mb-4"
+            >
+              Обо мне
+            </h3>
+            <p class="text-sm sm:text-base md:text-lg text-text-muted leading-relaxed">
+              В дизайне более 10 лет. Прошел путь от полиграфии до сложных
+              продуктовых интерфейсов. Сейчас я фокусируюсь на процессах: как
+              сделать так, чтобы дизайн-команда работала эффективно, а
+              разработка получала качественные вводные. Я готов брать
+              ответственность не только за макеты, но и за архитектуру продукта
+              и построение процессов в команде.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="bg-[#242424] text-white py-24 text-center">
+        <div class="container mx-auto px-6 max-w-4xl text-center py-20">
+          <h2
+            class="font-serif text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight mb-3"
+          >
+            Открыт к предложениям на позиции
+          </h2>
+          <h2
+            class="font-serif text-lg sm:text-xl md:text-2xl font-normal text-[#888888] mb-8"
+          >
+            Senior Product Designer / Design Lead
+          </h2>
+
+          <nav
+            class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-10 text-sm sm:text-base"
+            aria-label="Контакты"
+          >
+            <a
+              href="mailto:andreisudnichnikov@yandex.ru"
+              class="hover:text-white transition"
+            >
+              andreisudnichnikov@yandex.ru
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white transition"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://t.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white transition"
+            >
+              Telegram
+            </a>
+            <a
+              href="#"
+              class="bg-[#4285F4] text-white px-8 py-3 rounded-[12px] font-medium hover:bg-[#3367D6] transition-colors"
+            >
+              Скачать CV
+            </a>
+          </nav>
+
+          <p class="text-xs text-[#777777]">
+            ©
+            <span id="year"></span>
+            Системность, какая она есть.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Автоматический год в копирайте
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+    </script>
+  </body>
+>>>>>>> ade9658 (Initial commit: Design Architect Portfolio)
 </html>
