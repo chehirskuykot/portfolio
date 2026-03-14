@@ -1,4 +1,4 @@
-### Привет, я Андрей Судничников 👋
+### Привет, я Андрей Судничников
 
 **Senior Product Designer / System Architect**
 
@@ -8,17 +8,7 @@
 
 ---
 
-#### 🛠 Инструментарий и Компетенции
-
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white) ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
-
-*   **Architecture:** Design Tokens, Atomic Design, Component Versioning.
-*   **Figma Ops:** Advanced Variables, Conditional Logic, Dev Mode Handoff.
-*   **Tech Awareness:** Понимаю логику HTML/CSS, структуру React-компонентов. Говорю на одном языке с Frontend-командой.
-
----
-
-#### 🔭 Мой подход (Философия)
+#### Мой подход
 
 > *"Дизайн — это не украшательство, а инструмент снижения энтропии в продукте."*
 
@@ -28,15 +18,6 @@
 
 ---
 
-#### 🏆 Ключевой опыт
+#### Контакт
 
-*   **Holiverse (Fintech):** Внедрил дизайн-систему с нуля за 4 месяца. Сократил Time-to-Market выпуска новых фич на **50%**.
-*   **Lightstar (E-com):** Провел функциональный редизайн платформы, оптимизировал работу каталога и повысил конверсию в целевых сценариях.
-
----
-
-#### 📫 Контакты
-
-*   🌐 **Portfolio:** [sudnichnikov.design](ссылка на твой сайт)
-*   ✈️ **Telegram:** [@твой_ник](https://t.me/твой_ник)
-*   💼 **LinkedIn:** [Andrey Sudnichnikov](ссылка)
+*   ✈️ **Telegram:** [@chehirskuy_kot](https://t.me/chehirskuy_kot)
