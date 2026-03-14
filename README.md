@@ -1,24 +1,42 @@
-### Hi there, I'm Andrey Sudnichnikov 👋
+### Привет, я Андрей Судничников 👋
 
 **Senior Product Designer / System Architect**
-Specializing in Design Ops, Design Systems, and bridging the gap between Design and Engineering.
+
+Превращаю хаос в работающую систему. Специализируюсь на **Design Ops**, архитектуре интерфейсов и связке «Дизайн — Разработка».
+
+Мой фокус — инженерный подход: вместо «рисования картинок» я строю логические структуры (Design Systems), которые экономят бюджет бизнеса и ускоряют Time-to-Market.
 
 ---
 
-#### 🛠 Stack & Tools
-*   **Design:** Figma (Variables, Auto Layout, Component Properties)
-*   **Documentation:** Notion, Zeroheight
-*   **Tech Awareness:** HTML/CSS Logic, React Components Structure, Git
-*   **Methodology:** Atomic Design, BEM, Token-based Architecture
+#### 🛠 Инструментарий и Компетенции
 
-#### 🔭 Philosophy
-> "Design is not just about how it looks, but how it works and scales."
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white) ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
-I treat interfaces as engineering systems. My goal is to reduce entropy, optimize time-to-market, and build strict logical connections between UI and Code.
+*   **Architecture:** Design Tokens, Atomic Design, Component Versioning.
+*   **Figma Ops:** Advanced Variables, Conditional Logic, Dev Mode Handoff.
+*   **Tech Awareness:** Понимаю логику HTML/CSS, структуру React-компонентов. Говорю на одном языке с Frontend-командой.
 
-#### 📫 Connect with me
-*   [Portfolio](ссылка на твой сайт)
-*   [LinkedIn](ссылка)
-*   [Telegram](ссылка)
+---
 
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+#### 🔭 Мой подход (Философия)
+
+> *"Дизайн — это не украшательство, а инструмент снижения энтропии в продукте."*
+
+1.  **Система > Хаос.** Любой элемент интерфейса должен быть частью системы.
+2.  **Логика > Визуал.** Интерфейс должен быть предсказуемым и масштабируемым.
+3.  **Экономия ресурсов.** Качественная дизайн-система сокращает время разработки фич на 30-50%.
+
+---
+
+#### 🏆 Ключевой опыт
+
+*   **Holiverse (Fintech):** Внедрил дизайн-систему с нуля за 4 месяца. Сократил Time-to-Market выпуска новых фич на **50%**.
+*   **Lightstar (E-com):** Провел функциональный редизайн платформы, оптимизировал работу каталога и повысил конверсию в целевых сценариях.
+
+---
+
+#### 📫 Контакты
+
+*   🌐 **Portfolio:** [sudnichnikov.design](ссылка на твой сайт)
+*   ✈️ **Telegram:** [@твой_ник](https://t.me/твой_ник)
+*   💼 **LinkedIn:** [Andrey Sudnichnikov](ссылка)
