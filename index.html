@@ -54,225 +54,273 @@
     </style>
   </head>
 
-  <body class="bg-[#FCFAF8] text-[#67625B] antialiased font-sans">
+  <body class="bg-black text-gray-100 antialiased font-sans">
     <div class="min-h-screen flex flex-col">
-      <!-- HEADER / HERO -->
-      <header class="min-h-screen flex flex-col items-center justify-center px-6">
-        <div class="container mx-auto max-w-4xl text-center reveal">
-        <h1
-            class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight mb-4"
-          >
-            Product Designer &amp; System Architect
-          </h1>
-          <h2
-            class="font-serif text-xl sm:text-2xl text-text-muted font-normal mb-8"
-          >
-            Превращаю хаос в работающую систему.
-          </h2>
-          <p
-            class="text-base sm:text-lg text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed"
-          >
-            Специализируюсь на Design Ops, архитектуре интерфейсов и связке
-            «Дизайн — Разработка». Проектирую логику продукта, которая экономит
-            ресурсы бизнеса.
-          </p>
-
-          <div
-            class="flex flex-wrap items-center justify-center gap-4 sm:gap-6"
-            aria-label="Основные действия"
-          >
+      <!-- TOP BAR -->
+      <header class="border-b border-white/10">
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between text-[11px] sm:text-xs text-gray-400"
+        >
+          <div class="flex items-center gap-2">
+            <span class="uppercase tracking-[0.18em]">Sudnichnikov</span>
+            <span class="hidden sm:inline-block text-gray-600">/ Product Designer</span>
+          </div>
+          <nav class="flex items-center gap-4">
             <a
-              href="assets/Sudnichnikov-A-CV.pdf" download="assets/Sudnichnikov-A-CV.pdf"
-              class="bg-[#4285F4] text-white px-8 py-3 rounded-[12px] font-medium hover:bg-[#3367D6] transition-colors"
+              href="mailto:andreisudnichnikov@yandex.ru"
+              class="hover:text-gray-100 transition"
+              >Email</a
             >
-              Скачать CV
-            </a>
             <a
               href="https://t.me/chehirskuy_kot"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-[12px] bg-gray-100 text-text-main text-sm font-medium border border-gray-200 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 focus-visible:ring-offset-page transition"
+              class="hover:text-gray-100 transition"
+              >Telegram</a
             >
-              <i class="ph ph-telegram-logo text-lg"></i>
-              <span>Telegram</span>
-            </a>
-          </div>
+            <a
+              href="assets/Sudnichnikov-A-CV.pdf"
+              download="Sudnichnikov-A-CV.pdf"
+              class="px-3 py-1 rounded-full border border-white/15 hover:bg-white hover:text-black transition"
+              >CV</a
+            >
+          </nav>
         </div>
       </header>
 
       <main class="flex-1">
-        <!-- ПОРТФОЛИО / КЕЙСЫ -->
-        <section class="py-16">
-          <div class="container mx-auto px-6 max-w-5xl reveal">
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
-            >
-              <article
-                class="bg-gray-200 rounded-2xl aspect-[4/3] shadow-sm border border-card-border"
-                aria-label="Placeholder кейса 1"
-              ></article>
-              <article
-                class="bg-gray-200 rounded-2xl aspect-[4/3] shadow-sm border border-card-border"
-                aria-label="Placeholder кейса 2"
-              ></article>
-              <article
-                class="bg-gray-200 rounded-2xl aspect-[4/3] shadow-sm border border-card-border"
-                aria-label="Placeholder кейса 3"
-              ></article>
+        <!-- INTRO -->
+        <section class="border-b border-white/10">
+          <div
+            class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-24 grid gap-10 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] items-start reveal"
+          >
+            <div class="space-y-5">
+              <p class="text-xs uppercase tracking-[0.2em] text-gray-500">
+                Product Designer &amp; System Architect
+              </p>
+              <h1
+                class="font-serif text-3xl sm:text-4xl md:text-[40px] leading-tight text-gray-50"
+              >
+                Превращаю хаос продуктовых задач<br class="hidden sm:block" />
+                в работающую систему.
+              </h1>
+              <p class="text-sm sm:text-[15px] leading-relaxed text-gray-400 max-w-xl">
+                Product Designer с 10-летним опытом. Специализируюсь на Design Ops и
+                создании масштабируемых дизайн‑систем, которые связывают дизайн с
+                разработкой и сокращают Time‑to‑Market новых фич.
+              </p>
             </div>
+
+            <dl class="space-y-4 text-xs sm:text-[13px] text-gray-400">
+              <div class="flex justify-between gap-6 border-b border-white/5 pb-3">
+                <dt class="text-gray-500">Роль</dt>
+                <dd class="text-right text-gray-200">
+                  Senior Product Designer<br />
+                  Lead of Design System
+                </dd>
+              </div>
+              <div class="flex justify-between gap-6 border-b border-white/5 pb-3">
+                <dt class="text-gray-500">Фокус</dt>
+                <dd class="text-right">
+                  Design Systems, Design Ops,<br />
+                  Information Architecture
+                </dd>
+              </div>
+              <div class="flex justify-between gap-6 border-b border-white/5 pb-3">
+                <dt class="text-gray-500">Core</dt>
+                <dd class="text-right">
+                  Atomic Design, Developer Handoff,<br />
+                  Prototyping, Design QA
+                </dd>
+              </div>
+              <div class="flex justify-between gap-6">
+                <dt class="text-gray-500">Tools</dt>
+                <dd class="text-right">
+                  Figma (Variables, Auto Layout,<br />
+                  Components), Jira, AI‑инструменты
+                </dd>
+              </div>
+            </dl>
           </div>
         </section>
 
-        <!-- ФИЛОСОФИЯ / DESIGN AS ENGINEERING -->
-        <section class="py-16">
-          <div class="container mx-auto px-6 max-w-5xl reveal">
-            <h2
-              class="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-center mb-12 tracking-tight"
-            >
-              Design as engineering
-            </h2>
-
-            <div
-              class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch"
-            >
-              <!-- Карточка 1 -->
-              <article
-                class="bg-white rounded-2xl border border-card-border shadow-sm p-6 sm:p-7 flex flex-col h-full"
-              >
-                <div
-                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-accent mb-4"
-                  aria-hidden="true"
-                >
-                  <i class="ph ph-brackets-angle text-xl"></i>
-                </div>
-                <h3 class="font-serif text-lg sm:text-xl font-normal mb-3">
-                  Система, а не макеты
-                </h3>
-                <p class="text-sm sm:text-base text-text-muted leading-relaxed">
-                  Я не передаю в разработку картинки. Я передаю логику,
-                  состояния, корнер-кейсы и готовые компоненты.
-                </p>
-              </article>
-
-              <!-- Карточка 2 -->
-              <article
-                class="bg-white rounded-2xl border border-card-border shadow-sm p-6 sm:p-7 flex flex-col h-full"
-              >
-                <div
-                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-accent mb-4"
-                  aria-hidden="true"
-                >
-                  <i class="ph ph-chart-line-up text-xl"></i>
-                </div>
-                <h3 class="font-serif text-lg sm:text-xl font-normal mb-3">
-                  Язык бизнеса
-                </h3>
-                <p class="text-sm sm:text-base text-text-muted leading-relaxed">
-                  Дизайн должен решать задачи продукта (KPI, конверсия,
-                  удержание), а не личные амбиции дизайнера.
-                </p>
-              </article>
-
-              <!-- Карточка 3 -->
-              <article
-                class="bg-white rounded-2xl border border-card-border shadow-sm p-6 sm:p-7 flex flex-col h-full"
-              >
-                <div
-                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-accent mb-4"
-                  aria-hidden="true"
-                >
-                  <i class="ph ph-terminal-window text-xl"></i>
-                </div>
-                <h3 class="font-serif text-lg sm:text-xl font-normal mb-3">
-                  Дружба с Dev
-                </h3>
-                <p class="text-sm sm:text-base text-text-muted leading-relaxed">
-                  Я понимаю, как верстается мой макет. Компоненты в Figma
-                  соответствуют компонентам в React/Vue. Это экономит часы
-                  работы.
-                </p>
-              </article>
+        <!-- EXPERIENCE + CASES -->
+        <section class="pb-24">
+          <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <!-- Experience list -->
+            <div class="pt-12 pb-10 border-b border-white/10 reveal">
+              <h2 class="font-serif text-sm tracking-[0.22em] uppercase text-gray-500 mb-6">
+                Опыт
+              </h2>
+              <ul class="space-y-4 text-xs sm:text-[13px] text-gray-300">
+                <li class="flex justify-between gap-4">
+                  <div>
+                    Senior Product Designer (Lead of Design System), Holivers
+                  </div>
+                  <div class="text-gray-500 text-right">Февраль 2025 — Июнь 2025</div>
+                </li>
+                <li class="flex justify-between gap-4">
+                  <div>Product Designer, Lightstar Group</div>
+                  <div class="text-gray-500 text-right">Март 2024 — Декабрь 2024</div>
+                </li>
+                <li class="flex justify-between gap-4">
+                  <div>Product / Web Designer, Yamaguchi</div>
+                  <div class="text-gray-500 text-right">Октябрь 2021 — Февраль 2024</div>
+                </li>
+                <li class="flex justify-between gap-4">
+                  <div>Graphic Communication Co‑Worker, IKEA</div>
+                  <div class="text-gray-500 text-right">Октябрь 2020 — Октябрь 2021</div>
+                </li>
+                <li class="flex justify-between gap-4">
+                  <div>Designer (Freelance &amp; Print)</div>
+                  <div class="text-gray-500 text-right">Ранний опыт</div>
+                </li>
+              </ul>
             </div>
-          </div>
-        </section>
 
-        <!-- ОБО МНЕ -->
-        <section class="py-16">
-          <div class="container mx-auto px-6 max-w-3xl text-center reveal">
-            <div
-              class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-6"
-              aria-hidden="true"
-            ></div>
-            <h3
-              class="font-serif text-xl sm:text-2xl md:text-3xl font-normal mb-4"
-            >
-              Обо мне
-            </h3>
-            <p class="text-sm sm:text-base md:text-lg text-text-muted leading-relaxed">
-              В дизайне более 10 лет. Прошел путь от полиграфии до сложных
-              продуктовых интерфейсов. Сейчас я фокусируюсь на процессах: как
-              сделать так, чтобы дизайн-команда работала эффективно, а
-              разработка получала качественные вводные. Я готов брать
-              ответственность не только за макеты, но и за архитектуру продукта
-              и построение процессов в команде.
-            </p>
+            <!-- Case 1 -->
+            <article class="reveal border-b border-white/10">
+              <div
+                class="py-12 flex flex-col md:flex-row gap-8 md:gap-10 items-start"
+              >
+                <div class="md:w-[55%] space-y-3 text-xs sm:text-[13px]">
+                  <p class="text-gray-500 uppercase tracking-[0.18em]">
+                    Holivers — Design System
+                  </p>
+                  <h3 class="font-serif text-xl text-gray-50">
+                    Атомарная дизайн‑система, которая сократила Time‑to‑Market на 50%
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed">
+                    Спроектировал и внедрил с нуля дизайн‑систему: переменные, токены,
+                    компоненты, паттерны взаимодействия. Выстроил Developer Handoff и
+                    стандартизировал элементы, чтобы разработчики тратили меньше времени
+                    на внедрение новых фич.
+                  </p>
+                  <p class="text-gray-500">
+                    Роль: Senior Product Designer, Lead of Design System
+                  </p>
+                </div>
+                <div class="md:w-[45%] w-full">
+                  <div
+                    class="aspect-[4/3] w-full rounded-xl bg-neutral-900 border border-white/10"
+                    aria-label="Holivers design system case placeholder"
+                  ></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Case 2 -->
+            <article class="reveal border-b border-white/10">
+              <div
+                class="py-12 flex flex-col md:flex-row gap-8 md:gap-10 items-start"
+              >
+                <div class="md:w-[55%] space-y-3 text-xs sm:text-[13px]">
+                  <p class="text-gray-500 uppercase tracking-[0.18em]">
+                    Lightstar Group — Product Site
+                  </p>
+                  <h3 class="font-serif text-xl text-gray-50">
+                    Функциональный редизайн e‑commerce с опорой на продуктовые гипотезы
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed">
+                    Провёл полный редизайн сайта на основе бизнес‑требований и данных.
+                    Оптимизировал процессы с отделом продаж и e‑com, ускорив обновление
+                    ассортимента в приоритетной зоне «Скидки» и повысив конверсию
+                    интерфейсов.
+                  </p>
+                  <p class="text-gray-500">Роль: Product Designer</p>
+                </div>
+                <div class="md:w-[45%] w-full">
+                  <div
+                    class="aspect-[4/3] w-full rounded-xl bg-neutral-900 border border-white/10"
+                    aria-label="Lightstar product redesign case placeholder"
+                  ></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Case 3 -->
+            <article class="reveal border-b border-white/10">
+              <div
+                class="py-12 flex flex-col md:flex-row gap-8 md:gap-10 items-start"
+              >
+                <div class="md:w-[55%] space-y-3 text-xs sm:text[13px]">
+                  <p class="text-gray-500 uppercase tracking-[0.18em]">
+                    Yamaguchi — Beauty Academy
+                  </p>
+                  <h3 class="font-serif text-xl text-gray-50">
+                    Айдентика и интерфейсы для нового направления бренда
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed">
+                    Разработал визуальный стиль и интерфейсные паттерны для Yamaguchi
+                    Beauty Academy. Новый визуальный язык поддержал выход компании в
+                    бьюти‑сегмент и улучшил восприятие бренда в digital‑среде.
+                  </p>
+                  <p class="text-gray-500">Роль: Product / Web Designer</p>
+                </div>
+                <div class="md:w-[45%] w-full">
+                  <div
+                    class="aspect-[4/3] w-full rounded-xl bg-neutral-900 border border-white/10"
+                    aria-label="Yamaguchi case placeholder"
+                  ></div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Case 4 -->
+            <article class="reveal">
+              <div
+                class="py-12 flex flex-col md:flex-row gap-8 md:gap-10 items-start"
+              >
+                <div class="md:w-[55%] space-y-3 text-xs sm:text-[13px]">
+                  <p class="text-gray-500 uppercase tracking-[0.18em]">
+                    IKEA &amp; ранний опыт
+                  </p>
+                  <h3 class="font-serif text-xl text-gray-50">
+                    От строгого соблюдения бренд‑гайдов до системного digital‑дизайна
+                  </h3>
+                  <p class="text-gray-400 leading-relaxed">
+                    В IKEA курировал визуальную коммуникацию и контроль качества печатных
+                    материалов. Ранний путь от полиграфии до веба дал глубокое понимание
+                    типографики, композиции и производства, которое я сейчас применяю в
+                    продуктовых интерфейсах.
+                  </p>
+                  <p class="text-gray-500">
+                    Роли: Graphic Communication Co‑Worker, Designer (Freelance &amp; Print)
+                  </p>
+                </div>
+                <div class="md:w-[45%] w-full">
+                  <div
+                    class="aspect-[4/3] w-full rounded-xl bg-neutral-900 border border-white/10"
+                    aria-label="IKEA and early work case placeholder"
+                  ></div>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
-      </main>
 
       <!-- FOOTER -->
-      <footer class="bg-[#242424] text-white py-24 text-center">
-        <div class="container mx-auto px-6 max-w-4xl text-center py-20 reveal">
-          <h2
-            class="font-serif text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight mb-3"
-          >
-            Открыт к предложениям на позиции
-          </h2>
-          <h2
-            class="font-serif text-lg sm:text-xl md:text-2xl font-normal text-[#888888] mb-8"
-          >
-            Senior Product Designer / Design Lead
-          </h2>
-
-          <nav
-            class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 mb-10 text-sm sm:text-base"
-            aria-label="Контакты"
-          >
+      <footer class="border-t border-white/10 py-10 text-xs text-gray-500">
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 reveal"
+        >
+          <div>
+            © <span id="year"></span> Андрей Судничников. Дизайн как инженерия.
+          </div>
+          <div class="flex gap-4">
             <a
               href="mailto:andreisudnichnikov@yandex.ru"
-              class="hover:text-white transition"
+              class="hover:text-gray-200 transition"
+              >Email</a
             >
-              andreisudnichnikov@yandex.ru
-            </a>
             <a
-              href="#"
+              href="https://t.me/chehirskuy_kot"
               target="_blank"
               rel="noopener noreferrer"
-              class="hover:text-white transition"
+              class="hover:text-gray-200 transition"
+              >Telegram</a
             >
-              LinkedIn
-            </a>
-            <a
-              href="https://t.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-white transition"
-            >
-              Telegram
-            </a>
-            <a
-              href="#"
-              class="bg-[#4285F4] text-white px-8 py-3 rounded-[12px] font-medium hover:bg-[#3367D6] transition-colors"
-            >
-              Скачать CV
-            </a>
-          </nav>
-
-          <p class="text-xs text-[#777777]">
-            ©
-            <span id="year"></span>
-            Системность, какая она есть.
-          </p>
+          </div>
         </div>
       </footer>
     </div>
