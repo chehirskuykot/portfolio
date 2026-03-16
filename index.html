@@ -2,341 +2,228 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Lead Product Designer — Портфолио</title>
+    <title>Андрей Судничников — Product Designer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Google Fonts: Cormorant Garamond (заголовки), Rubik (текст) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400&family=Rubik:ital,wght@0,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Tailwind Config -->
-    <script>
-      tailwind = {
-        theme: {
-          extend: {
-            colors: {
-              page: "#FCFAF8",
-              "text-main": "#67625B",
-              "text-muted": "#C7C2BC",
-              accent: "#4A90E2",
-              "footer-bg": "#222222",
-              "footer-text": "#EEEEEE",
-              "card-border": "#EAEAEA",
-            },
-            fontFamily: {
-              sans: ["Rubik", "system-ui", "sans-serif"],
-              serif: ["Cormorant Garamond", "Georgia", "serif"],
-            },
-          },
-        },
-      };
-    </script>
+    <link rel="stylesheet" href="./styles.css" />
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Phosphor Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <style>
-      .reveal {
-        opacity: 0;
-        filter: blur(8px);
-        transform: translateY(12px);
-        transition: opacity 0.6s ease-out, filter 0.6s ease-out, transform 0.6s ease-out;
-      }
-      .reveal.visible {
-        opacity: 1;
-        filter: blur(0);
-        transform: translateY(0);
-      }
-    </style>
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к содержимому</a>
 
-  <body class="bg-black text-gray-100 antialiased font-sans">
-    <div class="min-h-screen flex flex-col">
-      <!-- TOP BAR -->
-      <header class="border-b border-white/10">
-        <div
-          class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between text-[11px] sm:text-xs text-gray-400"
-        >
-          <div class="flex items-center gap-2">
-            <span class="uppercase tracking-[0.18em]">Sudnichnikov</span>
-            <span class="hidden sm:inline-block text-gray-600">/ Product Designer</span>
-          </div>
-          <nav class="flex items-center gap-4">
-            <a
-              href="mailto:andreisudnichnikov@yandex.ru"
-              class="hover:text-gray-100 transition"
-              >Email</a
-            >
-            <a
-              href="https://t.me/chehirskuy_kot"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-gray-100 transition"
-              >Telegram</a
-            >
-            <a
-              href="assets/Sudnichnikov-A-CV.pdf"
-              download="Sudnichnikov-A-CV.pdf"
-              class="px-3 py-1 rounded-full border border-white/15 hover:bg-white hover:text-black transition"
-              >CV</a
-            >
-          </nav>
-        </div>
-      </header>
-
-      <main class="flex-1">
-        <!-- INTRO -->
-        <section class="border-b border-white/10">
-          <div
-            class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-24 grid gap-10 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] items-start reveal"
+    <header class="site-header">
+      <div class="wrapper site-header__inner">
+        <div class="site-header__name">Andrei Sudnichnikov</div>
+        <nav class="site-header__social" aria-label="Социальные ссылки">
+          <a
+            class="icon-link"
+            href="mailto:andreisudnichnikov@yandex.ru"
+            aria-label="Email"
+            title="Email"
           >
-            <div class="space-y-5">
-              <p class="text-xs uppercase tracking-[0.2em] text-gray-500">
-                Product Designer &amp; System Architect
-              </p>
-              <h1
-                class="font-serif text-3xl sm:text-4xl md:text-[40px] leading-tight text-gray-50"
-              >
-                Превращаю хаос продуктовых задач<br class="hidden sm:block" />
-                в работающую систему.
-              </h1>
-              <p class="text-sm sm:text-[15px] leading-relaxed text-gray-400 max-w-xl">
-                Product Designer с 10-летним опытом. Специализируюсь на Design Ops и
-                создании масштабируемых дизайн‑систем, которые связывают дизайн с
-                разработкой и сокращают Time‑to‑Market новых фич.
-              </p>
-            </div>
+            <i data-lucide="mail"></i>
+          </a>
+          <a
+            class="icon-link"
+            href="https://t.me/chehirskuy_kot"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Telegram"
+            title="Telegram"
+          >
+            <i data-lucide="send"></i>
+          </a>
+          <a
+            class="icon-link"
+            href="./assets/Sudnichnikov-A-CV.pdf"
+            download="Sudnichnikov-A-CV.pdf"
+            aria-label="Скачать CV"
+            title="Скачать CV"
+          >
+            <i data-lucide="download"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
 
-            <dl class="space-y-4 text-xs sm:text-[13px] text-gray-400">
-              <div class="flex justify-between gap-6 border-b border-white/5 pb-3">
-                <dt class="text-gray-500">Роль</dt>
-                <dd class="text-right text-gray-200">
-                  Senior Product Designer<br />
-                  Lead of Design System
-                </dd>
-              </div>
-              <div class="flex justify-between gap-6 border-b border-white/5 pb-3">
-                <dt class="text-gray-500">Фокус</dt>
-                <dd class="text-right">
-                  Design Systems, Design Ops,<br />
-                  Information Architecture
-                </dd>
-              </div>
-              <div class="flex justify-between gap-6 border-b border-white/5 pb-3">
-                <dt class="text-gray-500">Core</dt>
-                <dd class="text-right">
-                  Atomic Design, Developer Handoff,<br />
-                  Prototyping, Design QA
-                </dd>
-              </div>
-              <div class="flex justify-between gap-6">
-                <dt class="text-gray-500">Tools</dt>
-                <dd class="text-right">
-                  Figma (Variables, Auto Layout,<br />
-                  Components), Jira, AI‑инструменты
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </section>
+    <main id="content">
+      <section class="hero">
+        <div class="wrapper">
+          <p class="hero__lead">
+            Product Designer с 10-летним опытом в индустрии. Специализируюсь на
+            Design Ops и создании масштабных дизайн-систем, связывающих дизайн с
+            разработкой.
+          </p>
+          <h1 class="hero__title">
+            Превращаю хаос продуктовых<br />
+            задач в работающую систему.
+          </h1>
+        </div>
+      </section>
 
-        <!-- EXPERIENCE + CASES -->
-        <section class="pb-24">
-          <div class="max-w-5xl mx-auto px-4 sm:px-6">
-            <!-- Experience list -->
-            <div class="pt-12 pb-10 border-b border-white/10 reveal">
-              <h2 class="font-serif text-sm tracking-[0.22em] uppercase text-gray-500 mb-6">
-                Опыт
-              </h2>
-              <ul class="space-y-4 text-xs sm:text-[13px] text-gray-300">
-                <li class="flex justify-between gap-4">
-                  <div>
-                    Senior Product Designer (Lead of Design System), Holivers
-                  </div>
-                  <div class="text-gray-500 text-right">Февраль 2025 — Июнь 2025</div>
-                </li>
-                <li class="flex justify-between gap-4">
-                  <div>Product Designer, Lightstar Group</div>
-                  <div class="text-gray-500 text-right">Март 2024 — Декабрь 2024</div>
-                </li>
-                <li class="flex justify-between gap-4">
-                  <div>Product / Web Designer, Yamaguchi</div>
-                  <div class="text-gray-500 text-right">Октябрь 2021 — Февраль 2024</div>
-                </li>
-                <li class="flex justify-between gap-4">
-                  <div>Graphic Communication Co‑Worker, IKEA</div>
-                  <div class="text-gray-500 text-right">Октябрь 2020 — Октябрь 2021</div>
-                </li>
-                <li class="flex justify-between gap-4">
-                  <div>Designer (Freelance &amp; Print)</div>
-                  <div class="text-gray-500 text-right">Ранний опыт</div>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Case 1 -->
-            <article class="reveal border-b border-white/10">
-              <div
-                class="py-12 flex flex-col md:flex-row gap-8 md:gap-10 items-start"
-              >
-                <div class="md:w-[55%] space-y-3 text-xs sm:text-[13px]">
-                  <p class="text-gray-500 uppercase tracking-[0.18em]">
-                    Holivers — Design System
-                  </p>
-                  <h3 class="font-serif text-xl text-gray-50">
-                    Атомарная дизайн‑система, которая сократила Time‑to‑Market на 50%
-                  </h3>
-                  <p class="text-gray-400 leading-relaxed">
-                    Спроектировал и внедрил с нуля дизайн‑систему: переменные, токены,
-                    компоненты, паттерны взаимодействия. Выстроил Developer Handoff и
-                    стандартизировал элементы, чтобы разработчики тратили меньше времени
-                    на внедрение новых фич.
-                  </p>
-                  <p class="text-gray-500">
-                    Роль: Senior Product Designer, Lead of Design System
-                  </p>
-                </div>
-                <div class="md:w-[45%] w-full">
-                  <div
-                    class="aspect-[4/3] w-full rounded-xl bg-neutral-900 border border-white/10"
-                    aria-label="Holivers design system case placeholder"
-                  ></div>
-                </div>
+      <section class="section" aria-labelledby="experience-title">
+        <div class="wrapper">
+          <h2 class="section__title" id="experience-title">Experience</h2>
+          <ul class="experience-list" role="list">
+            <li class="experience-row js-reveal">
+              <div class="experience-row__left">
+                Senior Product Designer (Lead of Design System)
               </div>
+              <div class="experience-row__right">
+                <span class="experience-row__meta">Holivers</span>
+                <span class="experience-row__meta">Февраль 2025 — Июнь 2025</span>
+              </div>
+            </li>
+            <li class="experience-row js-reveal">
+              <div class="experience-row__left">Product Designer</div>
+              <div class="experience-row__right">
+                <span class="experience-row__meta">Lightstar Group</span>
+                <span class="experience-row__meta">Март 2024 — Декабрь 2024</span>
+              </div>
+            </li>
+            <li class="experience-row js-reveal">
+              <div class="experience-row__left">Product / Web Designer</div>
+              <div class="experience-row__right">
+                <span class="experience-row__meta">Yamaguchi</span>
+                <span class="experience-row__meta">Октябрь 2021 — Февраль 2024</span>
+              </div>
+            </li>
+            <li class="experience-row js-reveal">
+              <div class="experience-row__left">Graphic Communication Co-Worker</div>
+              <div class="experience-row__right">
+                <span class="experience-row__meta">IKEA</span>
+                <span class="experience-row__meta">Октябрь 2020 — Октябрь 2021</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-title">
+        <div class="wrapper">
+          <h2 class="section__title" id="projects-title">Projects</h2>
+
+          <div class="projects">
+            <article class="project-card js-reveal">
+              <header class="project-card__header">
+                <p class="project-card__kicker">Holivers</p>
+                <h3 class="project-card__title">
+                  Дизайн-система с нуля за 4 месяца
+                </h3>
+                <p class="project-card__desc">
+                  Перевёл хаотичные макеты в строгую структуру (переменные, токены,
+                  компоненты). Ускорил запуск новых фич на 50% за счёт стандартизации и
+                  выстроенного Developer Handoff.
+                </p>
+              </header>
+              <a class="project-card__media" href="#" aria-label="Проект Holivers">
+                <img
+                  src="./assets/images/placeholder.jpeg"
+                  alt="Holivers project preview"
+                  loading="lazy"
+                />
+              </a>
             </article>
 
-            <!-- Case 2 -->
-            <article class="reveal border-b border-white/10">
-              <div
-                class="py-12 flex flex-col md:flex-row gap-8 md:gap-10 items-start"
-              >
-                <div class="md:w-[55%] space-y-3 text-xs sm:text-[13px]">
-                  <p class="text-gray-500 uppercase tracking-[0.18em]">
-                    Lightstar Group — Product Site
-                  </p>
-                  <h3 class="font-serif text-xl text-gray-50">
-                    Функциональный редизайн e‑commerce с опорой на продуктовые гипотезы
-                  </h3>
-                  <p class="text-gray-400 leading-relaxed">
-                    Провёл полный редизайн сайта на основе бизнес‑требований и данных.
-                    Оптимизировал процессы с отделом продаж и e‑com, ускорив обновление
-                    ассортимента в приоритетной зоне «Скидки» и повысив конверсию
-                    интерфейсов.
-                  </p>
-                  <p class="text-gray-500">Роль: Product Designer</p>
-                </div>
-                <div class="md:w-[45%] w-full">
-                  <div
-                    class="aspect-[4/3] w-full rounded-xl bg-neutral-900 border border-white/10"
-                    aria-label="Lightstar product redesign case placeholder"
-                  ></div>
-                </div>
-              </div>
+            <article class="project-card js-reveal">
+              <header class="project-card__header">
+                <p class="project-card__kicker">Lightstar Group</p>
+                <h3 class="project-card__title">
+                  Редизайн на базе гипотез и бизнес-данных
+                </h3>
+                <p class="project-card__desc">
+                  Провёл функциональный редизайн сайта, оптимизировал связку Sales + E‑com
+                  и ускорил обновление товаров в зоне «Скидки». Уменьшил количество правок
+                  на этапе разработки за счёт систематизации прототипирования.
+                </p>
+              </header>
+              <a class="project-card__media" href="#" aria-label="Проект Lightstar">
+                <img
+                  src="./assets/images/placeholder.jpeg"
+                  alt="Lightstar Group project preview"
+                  loading="lazy"
+                />
+              </a>
             </article>
 
-            <!-- Case 3 -->
-            <article class="reveal border-b border-white/10">
-              <div
-                class="py-12 flex flex-col md:flex-row gap-8 md:gap-10 items-start"
-              >
-                <div class="md:w-[55%] space-y-3 text-xs sm:text[13px]">
-                  <p class="text-gray-500 uppercase tracking-[0.18em]">
-                    Yamaguchi — Beauty Academy
-                  </p>
-                  <h3 class="font-serif text-xl text-gray-50">
-                    Айдентика и интерфейсы для нового направления бренда
-                  </h3>
-                  <p class="text-gray-400 leading-relaxed">
-                    Разработал визуальный стиль и интерфейсные паттерны для Yamaguchi
-                    Beauty Academy. Новый визуальный язык поддержал выход компании в
-                    бьюти‑сегмент и улучшил восприятие бренда в digital‑среде.
-                  </p>
-                  <p class="text-gray-500">Роль: Product / Web Designer</p>
-                </div>
-                <div class="md:w-[45%] w-full">
-                  <div
-                    class="aspect-[4/3] w-full rounded-xl bg-neutral-900 border border-white/10"
-                    aria-label="Yamaguchi case placeholder"
-                  ></div>
-                </div>
-              </div>
+            <article class="project-card js-reveal">
+              <header class="project-card__header">
+                <p class="project-card__kicker">Yamaguchi</p>
+                <h3 class="project-card__title">
+                  Айдентика и стиль для Beauty Academy
+                </h3>
+                <p class="project-card__desc">
+                  Разработал айдентику и визуальный стиль нового направления. Новый стиль
+                  повлиял на рост продаж в бьюти‑сегменте и улучшил коммуникацию бренда в digital.
+                </p>
+              </header>
+              <a class="project-card__media" href="#" aria-label="Проект Yamaguchi">
+                <img
+                  src="./assets/images/placeholder.jpeg"
+                  alt="Yamaguchi project preview"
+                  loading="lazy"
+                />
+              </a>
             </article>
 
-            <!-- Case 4 -->
-            <article class="reveal">
-              <div
-                class="py-12 flex flex-col md:flex-row gap-8 md:gap-10 items-start"
-              >
-                <div class="md:w-[55%] space-y-3 text-xs sm:text-[13px]">
-                  <p class="text-gray-500 uppercase tracking-[0.18em]">
-                    IKEA &amp; ранний опыт
-                  </p>
-                  <h3 class="font-serif text-xl text-gray-50">
-                    От строгого соблюдения бренд‑гайдов до системного digital‑дизайна
-                  </h3>
-                  <p class="text-gray-400 leading-relaxed">
-                    В IKEA курировал визуальную коммуникацию и контроль качества печатных
-                    материалов. Ранний путь от полиграфии до веба дал глубокое понимание
-                    типографики, композиции и производства, которое я сейчас применяю в
-                    продуктовых интерфейсах.
-                  </p>
-                  <p class="text-gray-500">
-                    Роли: Graphic Communication Co‑Worker, Designer (Freelance &amp; Print)
-                  </p>
-                </div>
-                <div class="md:w-[45%] w-full">
-                  <div
-                    class="aspect-[4/3] w-full rounded-xl bg-neutral-900 border border-white/10"
-                    aria-label="IKEA and early work case placeholder"
-                  ></div>
-                </div>
-              </div>
+            <article class="project-card js-reveal">
+              <header class="project-card__header">
+                <p class="project-card__kicker">IKEA</p>
+                <h3 class="project-card__title">Brand compliance и продакшн</h3>
+                <p class="project-card__desc">
+                  Обеспечивал соблюдение глобальных гайдлайнов бренда (Compliance) в локальных материалах,
+                  курировал подготовку к производству и контроль качества.
+                </p>
+              </header>
+              <a class="project-card__media" href="#" aria-label="Проект IKEA">
+                <img
+                  src="./assets/images/placeholder.jpeg"
+                  alt="IKEA project preview"
+                  loading="lazy"
+                />
+              </a>
             </article>
-          </div>
-        </section>
-
-      <!-- FOOTER -->
-      <footer class="border-t border-white/10 py-10 text-xs text-gray-500">
-        <div
-          class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 reveal"
-        >
-          <div>
-            © <span id="year"></span> Андрей Судничников. Дизайн как инженерия.
-          </div>
-          <div class="flex gap-4">
-            <a
-              href="mailto:andreisudnichnikov@yandex.ru"
-              class="hover:text-gray-200 transition"
-              >Email</a
-            >
-            <a
-              href="https://t.me/chehirskuy_kot"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-gray-200 transition"
-              >Telegram</a
-            >
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section class="section" aria-labelledby="about-title">
+        <div class="wrapper">
+          <h2 class="section__title" id="about-title">About</h2>
+          <p class="about js-reveal">
+            Мой фокус — инженерный подход к интерфейсам: вместо «рисования картинок» я строю логические
+            структуры, которые экономят бюджет компании. Отлично понимаю техническую сторону реализации
+            (HTML/CSS логику) и говорю на одном языке с бизнесом.
+          </p>
+          <p class="about js-reveal">
+            Core: Design Systems, Information Architecture, Prototyping, Developer Handoff, Design QA.
+            Tools: Figma (Variables, Auto Layout, Components), Jira, AI tools. Approach: Atomic Design, System Thinking.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper site-footer__inner">
+        <div class="site-footer__copy">
+          © <span id="year"></span> Andrei Sudnichnikov
+        </div>
+      </div>
+    </footer>
 
     <script>
-      // Автоматический год в копирайте
-      document.getElementById("year").textContent =
-        new Date().getFullYear().toString();
-
-      // Появление блоков при скролле (blur 8px → резкость)
-      const observerOptions = { rootMargin: "8px", threshold: 0.05 };
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("visible");
-        });
-      }, observerOptions);
-      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+      document.getElementById("year").textContent = new Date().getFullYear().toString();
+      lucide.createIcons();
     </script>
+    <script src="./animations.js"></script>
   </body>
+</html>
