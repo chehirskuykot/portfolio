@@ -278,10 +278,12 @@ a:focus-visible {
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center; /* ← вот это добавляем */
   transform: scale(1);
   transition: transform 300ms var(--ease-out), filter 300ms var(--ease-out);
   filter: saturate(0.92) contrast(1.03);
 }
+
 
 .project-card__media:hover img {
   transform: scale(1.02);
