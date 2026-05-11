@@ -159,10 +159,14 @@
 
 .media-frame--ratio-work {
   aspect-ratio: 2880 / 1800;
+  flex-shrink: 0;
+  min-height: 10rem;
 }
 
 .media-frame--ratio-brand {
   aspect-ratio: 2000 / 1000;
+  flex-shrink: 0;
+  min-height: 10rem;
 }
 
 .media-frame--radius-sm {
@@ -181,10 +185,6 @@
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-.media-frame--no-border {
-  border: none;
-}
-
 /* ——— Games row ——— */
 
 .games-preview {
@@ -195,8 +195,9 @@
 }
 
 .games-preview > .media-frame {
-  flex: 1 1 0;
+  flex: 1 1 calc(50% - 12px);
   min-width: 0;
+  height: auto;
 }
 
 /* ——— Project cards ——— */
@@ -211,12 +212,51 @@
   border: 1px solid rgba(0, 0, 0, 0.15);
   overflow: hidden;
   position: relative;
+  isolation: isolate;
 }
 
 /* Карточки на светлом фоне — белые плашки на #fdfdfd (как в mobile 540:166; было #fcfcfc/#efefef) */
 .project-card--light,
 .project-card--gray {
   background-color: #ffffff;
+}
+
+/*
+ * Фон маленьких блоков как в Figma (524:486 и др.) — JPG на всю область через ::before.
+ * Контент выше декора по z-index.
+ */
+.project-card--art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-repeat: no-repeat;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.project-card--art-holivita::before {
+  background-image: url("./assets/images/holivita/holivita.jpg");
+  background-size: cover;
+  background-position: right center;
+}
+
+.project-card--art-vtb::before {
+  background-image: url("./assets/images/vtb/vtb.jpg");
+  background-size: cover;
+  background-position: right 10% bottom 35%;
+}
+
+.project-card--art-iq::before {
+  background-image: url("./assets/images/iqe/iqe.jpg");
+  background-size: cover;
+  background-position: right center;
+}
+
+.project-card--art-dot::before {
+  background-image: url("./assets/images/dot/dot.jpg");
+  background-size: contain;
+  background-position: calc(100% - 24px) center;
 }
 
 .project-card--iq {
@@ -281,88 +321,6 @@
 
 .project-card__desc--narrow {
   max-width: 425px;
-}
-
-/* Holivita card decoration (project photo asset) */
-
-.holivita-deco {
-  position: absolute;
-  right: -120px;
-  top: -120px;
-  width: min(520px, 55vw);
-  max-height: 380px;
-  pointer-events: none;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.holivita-deco img {
-  width: 100%;
-  height: auto;
-  max-height: 380px;
-  object-fit: contain;
-  object-position: center bottom;
-  transform: rotate(-8deg);
-  border-radius: 12px;
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
-}
-
-/* Games illustrations */
-
-.games-deco {
-  position: relative;
-  flex: 0 0 686px;
-  width: 686px;
-  max-width: 100%;
-  min-height: 210px;
-  align-self: stretch;
-}
-
-.games-deco__art {
-  position: absolute;
-  right: 8px;
-  bottom: -8px;
-  width: min(420px, 42vw);
-  max-width: 100%;
-  height: auto;
-  transform: rotate(6deg);
-  object-fit: contain;
-  pointer-events: none;
-  border-radius: 12px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
-}
-
-/* IQ column graphic */
-
-.iq-deco {
-  position: relative;
-  flex: 0 0 731px;
-  width: 731px;
-  max-width: 100%;
-  height: 258px;
-  flex-shrink: 0;
-}
-
-.iq-deco img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: bottom;
-}
-
-.brand-logo {
-  flex: 0 0 auto;
-  width: 648px;
-  max-width: 100%;
-  height: auto;
-}
-
-.brand-logo img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 /* ——— Buttons ——— */
@@ -609,13 +567,6 @@
 
 /* ——— Responsive ——— */
 
-@media (max-width: 1199px) {
-  .holivita-deco {
-    right: -180px;
-    opacity: 0.85;
-  }
-}
-
 @media (max-width: 991px) {
   .page {
     gap: 72px;
@@ -675,22 +626,6 @@
 
   .project-card--fixed-height {
     min-height: 0;
-  }
-
-  .games-deco {
-    flex-basis: auto;
-    width: 100%;
-  }
-
-  .iq-deco {
-    flex-basis: auto;
-    width: 100%;
-    height: auto;
-    min-height: 180px;
-  }
-
-  .holivita-deco {
-    display: none;
   }
 }
 
@@ -798,14 +733,16 @@
     line-height: 1.4;
   }
 
-  /* Превью игр: оба кадра с обводкой */
+  /* Превью игр: колонка без схлопывания flex (было «высота 1px») */
   .games-preview {
     flex-direction: column;
     gap: 24px;
   }
 
-  .games-preview .media-frame--no-border {
-    border: 1px solid rgba(0, 0, 0, 0.15);
+  .games-preview > .media-frame {
+    flex: none;
+    width: 100%;
+    min-height: 12rem;
   }
 
   /* Бренд-блок: скругление 16px на mobile */
@@ -840,28 +777,8 @@
     line-height: 1.4;
   }
 
-  .holivita-deco {
-    display: none;
-  }
-
-  .games-deco {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    min-height: 0;
-    width: 100%;
-  }
-
-  .games-deco__art {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    width: 100%;
-    max-width: 400px;
-    margin: 8px auto 0;
-    transform: none;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+  .project-card--art-dot::before {
+    background-position: calc(100% - 16px) center;
   }
 
   /* IQ: высота превью ближе к макету (~340px) */
