@@ -886,3 +886,205 @@
     white-space: normal;
   }
 }
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 100px;
+  padding: 120px 0px 0px;
+  position: relative;
+  background-color: #fdfdfd;
+}
+
+.main .frame {
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 60px;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main .text-wrapper {
+  position: relative;
+  width: 728px;
+  margin-top: -1px;
+  font-family: var(--plain-text-font-family);
+  font-weight: var(--plain-text-font-weight);
+  color: #000000;
+  font-size: var(--plain-text-font-size);
+  letter-spacing: var(--plain-text-letter-spacing);
+  line-height: var(--plain-text-line-height);
+  font-style: var(--plain-text-font-style);
+}
+
+.main .holi-dashboard {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  aspect-ratio: 1.65;
+  object-fit: cover;
+}
+
+.main .div {
+  gap: 24px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main .img {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  aspect-ratio: 1.6;
+  object-fit: cover;
+}
+
+.main .p {
+  width: 728px;
+  font-family: var(--plain-text-font-family);
+  font-weight: var(--plain-text-font-weight);
+  font-size: var(--plain-text-font-size);
+  letter-spacing: var(--plain-text-letter-spacing);
+  line-height: var(--plain-text-line-height);
+  position: relative;
+  color: #000000;
+  font-style: var(--plain-text-font-style);
+}
+
+.main .holi-phone {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  aspect-ratio: 2.65;
+}
+
+.main .span {
+  letter-spacing: var(--plain-text-letter-spacing);
+  font-family: var(--plain-text-font-family);
+  font-style: var(--plain-text-font-style);
+  font-weight: var(--plain-text-font-weight);
+  line-height: var(--plain-text-line-height);
+  font-size: var(--plain-text-font-size);
+}
+
+.main .text-wrapper-2 {
+  width: fit-content;
+  font-family: var(--subhead-font-family);
+  font-weight: var(--subhead-font-weight);
+  font-size: var(--subhead-font-size);
+  letter-spacing: var(--subhead-letter-spacing);
+  line-height: var(--subhead-line-height);
+  text-decoration: underline;
+  white-space: nowrap;
+  position: relative;
+  color: #000000;
+  font-style: var(--subhead-font-style);
+}
+
+.main .frame-2 {
+  flex-direction: column;
+  gap: 32px;
+  padding: 0px 60px 200px;
+  z-index: 0;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--subhead-font-family);
+  font-weight: var(--subhead-font-weight);
+  color: #000000;
+  font-size: var(--subhead-font-size);
+  letter-spacing: var(--subhead-letter-spacing);
+  line-height: var(--subhead-line-height);
+  text-decoration: underline;
+  white-space: nowrap;
+  font-style: var(--subhead-font-style);
+}
+
+.main .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  opacity: 0.5;
+  font-family: var(--plain-text-font-family);
+  font-weight: var(--plain-text-font-weight);
+  color: #000000;
+  font-size: var(--plain-text-font-size);
+  text-align: center;
+  letter-spacing: var(--plain-text-letter-spacing);
+  line-height: var(--plain-text-line-height);
+  white-space: nowrap;
+  font-style: var(--plain-text-font-style);
+}
+/* Original CSS code should be injected above */
+
+.main .frame,
+.main .frame-2 {
+  min-width: 0;
+}
+
+.main .text-wrapper,
+.main .p {
+  max-width: 728px;
+  width: 100%;
+}
+
+.main .holi-phone {
+  object-fit: cover;
+  display: block;
+}
+
+.main .holi-dashboard,
+.main .img,
+.main .holi-phone {
+  display: block;
+}
+
+.main .text-wrapper-2,
+.main .text-wrapper-3 {
+  color: #000000;
+}
+
+.main .text-wrapper-2:focus-visible,
+.main .text-wrapper-3:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  .main {
+    gap: 64px;
+    padding-top: 80px;
+  }
+
+  .main .frame {
+    padding: 0 16px;
+  }
+
+  .main .frame-2 {
+    gap: 24px;
+    padding: 0 16px 120px;
+  }
+
+  .main .div {
+    flex-direction: column;
+  }
+}

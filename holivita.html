@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Holivita — Андрей, Product Designer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./globals.css" />
-  <link rel="stylesheet" href="./styleguide.css" />
-  <link rel="stylesheet" href="./style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Holivita — проект о здоровье</title>
+<link rel="stylesheet" href="./globals.css" />
+<link rel="stylesheet" href="./styleguide.css" />
+<link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <main class="page project-page">
-    <header class="project-page__header">
-      <a class="project-page__back" href="./index.html" aria-label="Вернуться на главную">← На главную</a>
-      <h1 class="project-page__title">Holivita, это про здоровье.</h1>
-      <p class="project-page__lead">
-        Короткая, но интересная история о том, как я усилил команду удобным инструментом и сделал один из этапов регистрации понятнее и человечнее.
-      </p>
-    </header>
-
-    <section class="project-page__content">
-      <div class="media-frame media-frame--border media-frame--ratio-work">
-        <img
-          src="./assets/images/holivita/holivita-big.jpg"
-          alt="Экран интерфейса Holivita"
-          width="1600"
-          height="1000"
-          loading="eager"
-          decoding="async"
-        />
-      </div>
-
-      <article class="project-card project-card--light project-card--art project-card--art-holivita">
-        <div class="project-card__column">
-          <div class="project-card__text">
-            <h2 class="project-card__title project-card__title--center-sm">Кейс</h2>
-            <p class="project-card__desc project-card__desc--narrow project-card__desc--mob-sm">
-              В этом проекте я сфокусировался на ясности и доверии: объяснил «зачем» и «что будет дальше»,
-              снизил тревожность и убрал лишние шаги — без тёмных паттернов.
-            </p>
-          </div>
-          <a class="btn btn--ghost btn--on-light" href="./assets/Sudnichnikov-A-CV.pdf" download="Sudnichnikov-A-CV.pdf" aria-label="Скачать резюме PDF">
-            Скачать резюме
-          </a>
-        </div>
-      </article>
-    </section>
-  </main>
+<main class="main">
+<article class="frame" aria-labelledby="project-description">
+<p class="text-wrapper" id="project-description">Holivita — это приложение про здоровье. Под капотом там работают умные нейросети, которые анализируют данные и предсказывают состояние организма. Когда ребята из команды рассказывали мне, как работает эта математика, звучало это абсолютно убедительно, но при этом немного волшебно. Именно от этого ощущения я отталкивался в визуале: интерфейс должен был получиться чистым и чуточку футуристичным.</p>
+<img class="holi-dashboard" src="./assets/images/holivita/holi-dashboard.jpg" alt="Главный экран интерфейса Holivita с дашбордом и медицинскими карточками" />
+<div class="div" role="group" aria-label="Галерея экранов проекта Holivita">
+<img class="img" src="./assets/images/holivita/holi-board.jpg" alt="Экран приветствия и онбординга Holivita" />
+<img class="img" src="./assets/images/holivita/holi-test.jpg" alt="Экран приоритетов здоровья и анатомическая иллюстрация в Holivita" />
+</div>
+<p class="p">Основным вызовом для меня стали дашборды. Упаковать сложную медицинскую аналитику так, чтобы она не пугала пользователя и не выглядела как пульт управления самолетом — та еще задачка. Я потратил много времени на то, чтобы данные считывались легко и интуитивно.</p>
+<p class="p">Забавно, но изначально я приходил на позицию Лида дизайн-системы. Однако всё было на самом старте, и «систематизировать» было попросту нечего. Поэтому я засучил рукава и сначала взялся за сам продукт.</p>
+<img class="holi-phone" src="./assets/images/holivita/holi-phone.jpg" alt="Мобильный экран приложения Holivita на смартфоне" />
+<p class="p"><span class="span">Но свою главную задачу я не забыл: параллельно с интерфейсами я построил дизайн-систему </span><span class="span">HoloUI</span><span class="span">. Она стала полноценным внутренним продуктом. Теперь, вместо того чтобы спорить из-за отступов, команда собирает и выкатывает </span><span class="span">новые фичи на 50% быстрее.</span></p>
+<a class="text-wrapper-2" href="./index.html" aria-label="Перейти на главную">На главную</a>
+</article>
+<footer class="frame-2">
+  <nav class="contact-links" aria-label="Контакты и ссылки">
+    <a class="contact-links__item" href="./assets/Sudnichnikov-A-CV.pdf" download="Sudnichnikov-A-CV.pdf" aria-label="Скачать резюме PDF">Резюме</a>
+    <a class="contact-links__item" href="https://t.me/chehirskuy_kot" target="_blank" rel="noopener noreferrer" aria-label="Telegram — открыть в новой вкладке">Telegram</a>
+    <a class="contact-links__item" href="https://www.linkedin.com/in/andreysudnich" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — открыть в новой вкладке">LinkedIn</a>
+    <a class="contact-links__item" href="https://www.behance.net/andreysudnich" target="_blank" rel="noopener noreferrer" aria-label="Behance — открыть в новой вкладке">Behance</a>
+    <a class="contact-links__item" href="mailto:andreisudnichnikov@yandex.ru" aria-label="Написать на почту">Почта</a>
+    </nav>
+<p class="footer__copyright">©&nbsp;2021 - 2026. Sudnichnikov A.</p>
+</footer>
+</main>
 </body>
 </html>
